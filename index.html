@@ -26,9 +26,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .section-title{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--bordo);letter-spacing:.5px}
 .section-title span{font-family:'Jost',sans-serif;font-size:10px;font-weight:400;color:var(--text-light);letter-spacing:1px;text-transform:uppercase;margin-left:6px}
 .field-row{display:grid;gap:14px;margin-bottom:14px}
-.c1{grid-template-columns:1fr}
-.c2{grid-template-columns:1fr 1fr}
-.c3{grid-template-columns:1fr 1fr 1fr}
+.c1{grid-template-columns:1fr}.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:1fr 1fr 1fr}
 .field{display:flex;flex-direction:column;gap:5px}
 label{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--bordo)}
 label .en{font-weight:400;color:var(--text-light);letter-spacing:.5px;text-transform:none;font-size:9px;margin-left:4px}
@@ -50,33 +48,24 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .upload-area{border:1.5px dashed var(--border);border-radius:8px;background:var(--field-bg);padding:20px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;position:relative}
 .upload-area:hover,.upload-area.dg{border-color:var(--gold);background:rgba(201,167,106,.05)}
 .upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
-.uicon{font-size:28px;margin-bottom:8px}
-.utext{font-size:12px;color:var(--text-mid);font-weight:500}
-.usub{font-size:10px;color:var(--text-light);margin-top:4px}
-.uprev{display:none;margin-top:12px}
-.uprev img{max-width:100%;max-height:160px;border-radius:6px;border:1px solid var(--border);object-fit:contain}
+.uicon{font-size:28px;margin-bottom:8px}.utext{font-size:12px;color:var(--text-mid);font-weight:500}.usub{font-size:10px;color:var(--text-light);margin-top:4px}
+.uprev{display:none;margin-top:12px}.uprev img{max-width:100%;max-height:160px;border-radius:6px;border:1px solid var(--border);object-fit:contain}
 .ufname{font-size:11px;color:var(--success);margin-top:6px;font-weight:500}
 .sigbox{border:1px solid var(--border);border-radius:8px;background:var(--field-bg);position:relative;overflow:hidden}
 .sigcanvas{display:block;width:100%;height:150px;cursor:crosshair;touch-action:none}
 .sigph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;flex-direction:column;gap:6px;transition:opacity .3s}
-.sigph-icon{font-size:24px;opacity:.3}
-.sigph-text{font-size:11px;color:var(--text-light);font-style:italic}
+.sigph-icon{font-size:24px;opacity:.3}.sigph-text{font-size:11px;color:var(--text-light);font-style:italic}
 .sigact{display:flex;justify-content:flex-end;padding:8px 10px;border-top:1px solid var(--off-white);background:var(--off-white)}
 .sigclear{font-size:11px;color:var(--text-light);background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:4px;font-family:'Jost',sans-serif;transition:color .2s}
 .sigclear:hover{color:var(--error)}
-.gdprbox{background:var(--off-white);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:6px;padding:14px 16px;margin-bottom:16px}
-.gdprtext{font-size:10.5px;color:var(--text-mid);line-height:1.7}
-.gdprtext strong{color:var(--bordo)}
 .cbrow{display:flex;align-items:flex-start;gap:10px;margin-top:14px}
 .cbrow input[type=checkbox]{width:16px;height:16px;flex-shrink:0;margin-top:2px;accent-color:var(--bordo);cursor:pointer}
 .cblabel{font-size:11.5px;color:var(--text);line-height:1.5;cursor:pointer}
-.cblabel .en{display:block;font-size:10px;color:var(--text-light);font-style:italic;margin-top:2px}
+.cblabel em{display:block;font-size:10px;color:var(--text-light);font-style:italic;margin-top:2px}
 .subsec{padding:24px 32px 32px}
 .subbtn{width:100%;padding:16px;background:var(--bordo);color:var(--gold-light);border:none;border-radius:8px;font-family:'Jost',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background .2s,transform .1s;position:relative;overflow:hidden}
 .subbtn::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.subbtn:hover{background:var(--bordo-mid)}
-.subbtn:active{transform:scale(.99)}
-.subbtn:disabled{opacity:.6;cursor:not-allowed}
+.subbtn:hover{background:var(--bordo-mid)}.subbtn:active{transform:scale(.99)}.subbtn:disabled{opacity:.6;cursor:not-allowed}
 .spin{display:none;width:16px;height:16px;border:2px solid rgba(201,167,106,.3);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
 @keyframes spin{to{transform:rotate(360deg)}}
 .sucscr{display:none;padding:56px 32px;text-align:center;animation:fadeUp .5s ease both}
@@ -97,8 +86,15 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
   <div class="header">
     <div class="brand">RH RESERVE</div>
     <div class="doc-title">Fisa de Cazare &nbsp;/&nbsp; Accommodation Registration Form</div>
-    <div class="legal-ref">RH Estate SRL &middot; CUI 18647531 &middot; Calea Vitan 58, Bucuresti &middot; HG 237/2001 &middot; GDPR (UE) 679/2016 &middot; Legea 214/2024</div>
   </div>
+
+  <div style="background:var(--off-white);border-bottom:2px solid var(--gold);padding:14px 32px;">
+    <p style="font-size:11px;color:var(--bordo);line-height:1.7;margin:0;">
+      <strong>Conform HG 237/2001</strong>, toti turistii au obligatia legala de a completa Fisa de Anuntare a Sosirii si Plecarii la check-in. Va rugam sa completati cu atentie urmatorul formular — datele dumneavoastra sunt confidentiale si protejate conform GDPR.<br>
+      <em style="color:var(--text-light);font-size:10.5px;">Under HG 237/2001, all guests are legally required to complete an Arrival &amp; Departure Registration Form at check-in. Please fill in the form carefully — your data is confidential and protected under GDPR.</em>
+    </p>
+  </div>
+
   <div class="progress-bar"><div class="progress-fill" id="PF"></div></div>
 
   <form id="CF" novalidate>
@@ -107,15 +103,17 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
     <div class="section">
       <div class="section-label"><div class="section-num">1</div><div class="section-title">Date Sejur <span>/ Stay Details</span></div></div>
       <div class="field-row c2">
-        <div class="field"><label>Proprietate <span class="req">*</span><span class="en">/ Property</span></label><input type="text" name="proprietate" placeholder="ex. SoHo Unirii Studio" required><span class="emsg">Camp obligatoriu</span></div>
-        <div class="field"><label>Nr. Rezervare <span class="en">/ Booking Ref.</span></label><input type="text" name="nr_rezervare" placeholder="ex. 4521839201"></div>
-      </div>
-      <div class="field-row c2">
         <div class="field"><label>Data Sosirii <span class="req">*</span><span class="en">/ Check-in</span></label><input type="date" name="data_sosire" id="DS" required><span class="emsg">Camp obligatoriu</span></div>
         <div class="field"><label>Data Plecarii <span class="req">*</span><span class="en">/ Check-out</span></label><input type="date" name="data_plecare" id="DP" required><span class="emsg">Camp obligatoriu</span></div>
       </div>
       <div class="field-row c2">
-        <div class="field"><label>Nr. Persoane <span class="req">*</span><span class="en">/ No. of Guests</span></label>
+        <div class="field">
+          <label>Proprietate <span class="req">*</span><span class="en">/ Property</span></label>
+          <input type="text" name="proprietate" placeholder="ex. SoHo Unirii Studio" required>
+          <span class="emsg">Camp obligatoriu</span>
+        </div>
+        <div class="field">
+          <label>Nr. Persoane <span class="req">*</span><span class="en">/ Guests</span></label>
           <select id="NPS" name="nr_persoane" required>
             <option value="">Selectati / Select</option>
             <option value="1">1 persoana</option>
@@ -127,7 +125,10 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
           </select>
           <span class="emsg">Camp obligatoriu</span>
         </div>
-        <div class="field"><label>Scopul Vizitei <span class="req">*</span><span class="en">/ Purpose</span></label>
+      </div>
+      <div class="field-row c1">
+        <div class="field">
+          <label>Scopul Vizitei <span class="req">*</span><span class="en">/ Purpose</span></label>
           <select name="scop_vizita" required>
             <option value="">Selectati / Select</option>
             <option>Turism / Tourism</option>
@@ -146,9 +147,9 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
     </div>
 
     <div class="section">
-      <div class="section-label"><div class="section-num">3</div><div class="section-title">Copie Act de Identitate <span>/ ID Document Upload</span></div></div>
+      <div class="section-label"><div class="section-num">3</div><div class="section-title">Copie Act de Identitate <span>/ ID Upload</span></div></div>
       <div class="field">
-        <label>Fotografie Act - Oaspete Principal <span class="req">*</span><span class="en">/ Primary Guest ID Photo</span></label>
+        <label>Fotografie Act - Oaspete Principal <span class="req">*</span><span class="en">/ Primary Guest ID</span></label>
         <div class="upload-area" id="UA">
           <input type="file" id="FI" name="act_identitate" accept="image/*,.pdf" required>
           <div class="uicon">&#128206;</div>
@@ -156,36 +157,80 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
           <div class="usub">Tap to take photo &middot; JPG, PNG, PDF &middot; max 10MB</div>
           <div class="uprev" id="UP"><img id="PI" src="" alt=""><div class="ufname" id="UFN"></div></div>
         </div>
-        <div class="fhint">CI: fata + verso daca este posibil &middot; Pasaport: pagina cu fotografie</div>
-        <span class="emsg" id="FE">Va rugam sa incarcati o fotografie a actului de identitate</span>
+        <div class="fhint">CI: fata + verso &middot; Pasaport: pagina cu fotografie</div>
+        <span class="emsg" id="FE">Va rugam sa incarcati actul de identitate</span>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label"><div class="section-num">4</div><div class="section-title">Consimtamant si Semnatura <span>/ Consent &amp; Signature</span></div></div>
-      <div class="gdprbox">
-        <div class="gdprtext">
-          <strong>Operator de date cu caracter personal:</strong> RH Estate SRL, CUI 18647531, sediu social Calea Vitan 58, Bucuresti, brand comercial RH Reserve.<br><br>
-          Datele dumneavoastra (nume, data nasterii, cetatenie, CNP, serie/numar act de identitate, adresa de domiciliu, date de contact) sunt prelucrate in temeiul <strong>art. 6 alin.(1) lit. c) GDPR (UE) 679/2016</strong>, exclusiv in scopul inregistrarii cazarii conform <strong>HG 237/2001</strong> si Ordinului MAI nr. 400/2004. Datele sunt stocate maxim <strong>5 ani</strong> de la data cazarii si nu sunt transmise tertilor fara consimtamant, cu exceptia obligatiilor legale fata de autoritati. Aveti dreptul la acces, rectificare, stergere, restrictionare si portabilitate. Contact: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8cede0e9f4ede2e8fef9a2feedf9e4ccebe1ede5e0a2efe3e1">[email&#160;protected]</a></strong> &middot; <strong>0723 662 199</strong><br><br>
-          <em style="color:var(--text-light);font-size:10px;">Data controller: RH Estate SRL (CUI 18647531), trading as RH Reserve, Calea Vitan 58, Bucharest. Your data is processed under Art.6(1)(c) GDPR for accommodation registration per HG 237/2001. Retention: 5 years max. Rights: access, rectification, erasure, restriction, portability.</em>
-        </div>
+
+      <div style="background:var(--off-white);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:6px;padding:12px 14px;margin-bottom:14px;font-size:10.5px;color:var(--text-mid);line-height:1.6;">
+        Copia actului de identitate este folosita exclusiv pentru verificarea identitatii si va fi stearsa in maxim 3 zile de la check-out.<br>
+        <em style="font-size:10px;color:var(--text-light);">The copy of your ID is used solely for identity verification and will be deleted within 3 days of check-out.</em>
       </div>
+
       <div class="cbrow">
-        <input type="checkbox" id="GC" name="gdpr_consent" value="DA - consimtamant exprimat" required>
+        <input type="checkbox" id="GC" name="gdpr_consent" value="DA" required>
         <label for="GC" class="cblabel">
-          Am citit informarea de mai sus si imi exprim consimtamantul pentru prelucrarea datelor cu caracter personal de catre RH Estate SRL in scopul inregistrarii cazarii. Confirm ca toate datele completate sunt corecte, complete si reale.
-          <span class="en">I have read the above notice and consent to the processing of my personal data by RH Estate SRL for accommodation registration. I confirm all information provided is accurate, complete and truthful.</span>
+          Am luat la cunostinta si sunt de acord cu Politica de prelucrare a datelor cu caracter personal RH Reserve.
+          <em>I have read and agree with the RH Reserve Personal Data Processing Policy.</em>
         </label>
       </div>
-      <span class="emsg" id="GE" style="margin-left:26px;">Consimtamantul este obligatoriu / Consent is required</span>
+      <span class="emsg" id="GE" style="margin-left:26px;">Camp obligatoriu</span>
+
+      <div style="margin:10px 0 10px 26px;">
+        <a href="#" onclick="var d=document.getElementById('TC');d.style.display=d.style.display==='none'?'block':'none';return false;" style="font-size:11px;color:var(--gold);text-decoration:underline;font-weight:600;">&#9432; Cititi Politica de prelucrare a datelor / Read the Personal Data Processing Policy</a>
+        <div id="TC" style="display:none;margin-top:10px;background:white;border:1px solid var(--border);border-radius:6px;padding:16px;font-size:10px;color:var(--text-mid);line-height:1.8;max-height:320px;overflow-y:auto;">
+          <strong style="color:var(--bordo);font-size:11px;display:block;margin-bottom:10px;">POLITICA DE PRELUCRARE A DATELOR / PERSONAL DATA PROCESSING POLICY</strong>
+
+          <strong style="color:var(--bordo);">1. Operatorul de date / Data Controller</strong><br>
+          RH Reserve, brand comercial al RH Estate SRL, CUI 18647531, Calea Vitan 58, Bucuresti.<br>
+          Contact: rh.reserve.properties@gmail.com &middot; 0723 662 199<br><br>
+
+          <strong style="color:var(--bordo);">2. Date colectate / Data Collected</strong><br>
+          Nume si prenume, data si locul nasterii, cetatenie, tip/serie/numar act de identitate, CNP, adresa de domiciliu, numar de telefon, email, copia actului de identitate, semnatura electronica, date sejur.<br>
+          <em>Full name, date &amp; place of birth, nationality, ID details, personal ID number, home address, phone, email, ID copy, electronic signature, stay details.</em><br><br>
+
+          <strong style="color:var(--bordo);">3. Scopul si temeiul legal / Purpose &amp; Legal Basis</strong><br>
+          Datele sunt prelucrate exclusiv pentru inregistrarea cazarii conform <strong>HG 237/2001</strong> si <strong>Ordinul MAI nr. 400/2004</strong>, in temeiul <strong>art. 6 alin.(1) lit. c) GDPR (UE) 679/2016</strong> — obligatie legala.<br>
+          <em>Data is processed solely for accommodation registration under HG 237/2001 and MAI Order 400/2004, based on Art. 6(1)(c) GDPR — legal obligation.</em><br><br>
+
+          <strong style="color:var(--bordo);">4. Durata stocarii / Retention</strong><br>
+          Date formular: maxim <strong>5 ani</strong> de la data cazarii conform HG 237/2001.<br>
+          Copia actului de identitate: stearsa in maxim <strong>3 zile</strong> de la check-out.<br>
+          <em>Form data: max. 5 years from check-in. ID copy: deleted within 3 days of check-out.</em><br><br>
+
+          <strong style="color:var(--bordo);">5. Destinatari / Recipients</strong><br>
+          Datele nu sunt transmise tertilor fara consimtamant, cu exceptia obligatiilor legale fata de autoritati competente (Politia Romana, instante judecatoresti, ANSPDCP).<br>
+          <em>Data is not shared without consent, except as required by law (Romanian Police, courts, ANSPDCP).</em><br><br>
+
+          <strong style="color:var(--bordo);">6. Drepturile dumneavoastra / Your Rights</strong><br>
+          Aveti dreptul la acces, rectificare, stergere, restrictionare, portabilitate si opozitie. Contact: <strong>rh.reserve.properties@gmail.com</strong><br>
+          <em>You have the right to access, rectification, erasure, restriction, portability and objection. Contact: rh.reserve.properties@gmail.com</em><br><br>
+
+          <strong style="color:var(--bordo);">7. Autoritate de supraveghere / Supervisory Authority</strong><br>
+          ANSPDCP, B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, Bucuresti. www.dataprotection.ro
+        </div>
+      </div>
+
+      <div class="cbrow" style="margin-top:6px;">
+        <input type="checkbox" id="DC" name="declaratie_corecte" value="DA" required>
+        <label for="DC" class="cblabel">
+          Declar ca toate informatiile furnizate sunt corecte si corespund cu realitatea. Imi asum responsabilitatea privind falsul in declaratii conform Legii nr. 286/2009 Cod Penal.
+          <em>I declare that all information provided is correct and accurate. I take responsibility for false declarations under Law 286/2009 Criminal Code.</em>
+        </label>
+      </div>
+      <span class="emsg" id="DE" style="margin-left:26px;">Camp obligatoriu</span>
+
       <div style="margin-top:22px;">
-        <label style="display:block;margin-bottom:8px;">Semnatura <span class="req">*</span> <span class="en" style="text-transform:none;letter-spacing:0;font-size:10px;margin-left:4px;">/ Signature</span></label>
+        <label style="display:block;margin-bottom:8px;">Semnatura <span class="req">*</span><span class="en" style="text-transform:none;letter-spacing:0;font-size:10px;margin-left:4px;">/ Signature</span></label>
         <div class="sigbox" id="SB">
           <canvas class="sigcanvas" id="SC"></canvas>
           <div class="sigph" id="SP"><div class="sigph-icon">&#9998;</div><div class="sigph-text">Semnati cu degetul sau mouse-ul / Sign with finger or mouse</div></div>
         </div>
         <div class="sigact"><button type="button" class="sigclear" onclick="clrSig()">&#10005; Sterge / Clear</button></div>
-        <span class="emsg" id="SE">Semnatura este obligatorie / Signature is required</span>
+        <span class="emsg" id="SE">Semnatura este obligatorie</span>
       </div>
     </div>
 
@@ -206,117 +251,85 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
   </div>
 
   </form>
-
-  <div class="footer"><div class="fbrand">RH RESERVE</div><div class="flegal">RH Estate SRL &middot; CUI 18647531 &middot; GDPR 679/2016 &middot; HG 237/2001</div></div>
+  <div class="footer" style="justify-content:center;"><div class="fbrand">RH RESERVE</div></div>
 </div>
-
 <script>
-var W3KEY = '734f3a9f-7f26-4542-8e8a-c88c879f1c36';
-var gCount = 0;
+var GAS='https://script.google.com/macros/s/AKfycbynXBGI_5m4OdIWFF26QvEVKqB1zTHkEqsMU526o0JrnbxJfyT0w6cCNtfUnbwumvt9/exec';
+var gCount=0;
 
-var ID_CFG = {
-  'Carte de Identitate':           {note:'', s:1, n:1, cnp:1, cr:1, a:1},
-  'Carte de Identitate Electronica':{note:'', s:1, n:1, cnp:1, cr:1, a:1},
-  'Pasaport / Passport':           {note:'Pasaport - introduceti numarul pasaportului. CNP optional pentru cetateni straini.', s:0, n:1, cnp:1, cr:0, a:1},
-  'Permis de Sedere / Residence Permit':{note:'Permis de sedere - serie si numar obligatorii.', s:1, n:1, cnp:1, cr:0, a:1},
-  'Alt document / Other':          {note:'Introduceti seria si numarul documentului disponibil.', s:1, n:1, cnp:0, cr:0, a:1}
+var ID_CFG={
+  'Carte de Identitate':{note:'',s:1,n:1,cnp:1,cr:1,a:1},
+  'Carte de Identitate Electronica':{note:'',s:1,n:1,cnp:1,cr:1,a:1},
+  'Pasaport / Passport':{note:'Introduceti numarul pasaportului. CNP optional pentru cetateni straini.',s:0,n:1,cnp:1,cr:0,a:1},
+  'Permis de Sedere / Residence Permit':{note:'Serie si numar obligatorii.',s:1,n:1,cnp:1,cr:0,a:1},
+  'Alt document / Other':{note:'Introduceti seria si numarul documentului.',s:1,n:1,cnp:0,cr:0,a:1}
 };
 
-function buildId(p, tip) {
-  var c = ID_CFG[tip];
-  if (!c) return '';
-  var h = c.note ? '<div class="idnote">'+c.note+'</div>' : '';
-  var cols = (c.s?1:0)+(c.n?1:0)+(c.cnp?1:0);
-  if(cols<1) cols=1;
-  h += '<div class="field-row c'+cols+'" style="margin-bottom:12px;">';
-  if(c.s) h += '<div class="field"><label>Serie <span class="req">*</span><span class="en">/ Series</span></label><input type="text" name="'+p+'_serie" placeholder="XX" required><span class="emsg">Obligatoriu</span></div>';
-  if(c.n) h += '<div class="field"><label>Numar <span class="req">*</span><span class="en">/ Number</span></label><input type="text" name="'+p+'_numar" placeholder="123456" required><span class="emsg">Obligatoriu</span></div>';
+function buildId(p,tip){
+  var c=ID_CFG[tip];
+  if(!c)return '';
+  var h=c.note?'<div class="idnote">'+c.note+'</div>':'';
+  var cols=(c.s?1:0)+(c.n?1:0)+(c.cnp?1:0);
+  if(cols<1)cols=1;
+  h+='<div class="field-row c'+cols+'" style="margin-bottom:12px;">';
+  if(c.s)h+='<div class="field"><label>Serie <span class="req">*</span></label><input type="text" name="'+p+'_serie" placeholder="XX" required><span class="emsg">Obligatoriu</span></div>';
+  if(c.n)h+='<div class="field"><label>Numar <span class="req">*</span></label><input type="text" name="'+p+'_numar" placeholder="123456" required><span class="emsg">Obligatoriu</span></div>';
   if(c.cnp){
-    if(c.cr) h += '<div class="field"><label>CNP <span class="req">*</span><span class="en">/ Personal ID No.</span></label><input type="text" name="'+p+'_cnp" placeholder="1234567890123" maxlength="13" required><span class="emsg">CNP obligatoriu</span></div>';
-    else     h += '<div class="field"><label>CNP <span class="en">/ Optional</span></label><input type="text" name="'+p+'_cnp" placeholder="Optional" maxlength="13"></div>';
+    if(c.cr)h+='<div class="field"><label>CNP <span class="req">*</span></label><input type="text" name="'+p+'_cnp" placeholder="1234567890123" maxlength="13" required><span class="emsg">Obligatoriu</span></div>';
+    else h+='<div class="field"><label>CNP <span class="en">/ Optional</span></label><input type="text" name="'+p+'_cnp" placeholder="Optional" maxlength="13"></div>';
   }
-  h += '</div>';
-  if(c.a) h += '<div class="field-row c1"><div class="field"><label>Adresa Domiciliu <span class="req">*</span><span class="en">/ Home Address</span></label><input type="text" name="'+p+'_adresa" placeholder="Str. Exemplu nr. 1, Oras, Tara" required><span class="emsg">Obligatoriu</span></div></div>';
+  h+='</div>';
+  if(c.a)h+='<div class="field-row c1"><div class="field"><label>Adresa Domiciliu <span class="req">*</span></label><input type="text" name="'+p+'_adresa" placeholder="Str. Exemplu nr. 1, Oras, Tara" required><span class="emsg">Obligatoriu</span></div></div>';
   return h;
 }
 
-function updId(p) {
-  var v = document.getElementById(p+'_tip').value;
-  document.getElementById(p+'_idf').innerHTML = v ? buildId(p,v) : '';
+function updId(p){
+  var sel=document.getElementById(p+'_tip');
+  if(!sel)return;
+  var cont=document.getElementById(p+'_idf');
+  if(!cont)return;
+  cont.innerHTML=sel.value?buildId(p,sel.value):'';
   updProg();
 }
 
-function buildGuest(i) {
-  var p = 'g'+i;
-  var isFirst = (i===1);
-  var badge = isFirst
-    ? '<span class="gbadge">Oaspete Principal / Primary Guest</span>'
-    : '<span class="gbadge alt">Oaspete '+i+' / Guest '+i+'</span>';
-  var note = isFirst
-    ? '<div class="pnote"><strong>Oaspetele principal</strong> este persoana al carui <strong>nume personal figureaza in rezervare</strong>. Completati cu numele real al persoanei - nu denumiri de companie, pseudonime sau aliasuri.<em>The primary guest is the person whose full personal name appears on the booking - not a company name, alias or trade name.</em></div>'
-    : '';
-  var emailRow = isFirst
-    ? '<div class="field-row c2"><div class="field"><label>Email <span class="req">*</span></label><input type="email" name="'+p+'_email" placeholder="email@exemplu.com" required><span class="emsg">Email invalid</span></div><div class="field"><label>Telefon <span class="en">/ Phone</span></label><input type="tel" name="'+p+'_telefon" placeholder="+40 7XX XXX XXX"></div></div>'
-    : '';
-  return '<div class="gblock">'+
-    '<div class="gtitle">'+badge+'</div>'+
-    note+
-    '<div class="field-row c2">'+
-      '<div class="field"><label>Nume <span class="req">*</span><span class="en">/ Last Name</span></label><input type="text" name="'+p+'_nume" placeholder="Popescu" required><span class="emsg">Obligatoriu</span></div>'+
-      '<div class="field"><label>Prenume <span class="req">*</span><span class="en">/ First Name</span></label><input type="text" name="'+p+'_prenume" placeholder="Ion" required><span class="emsg">Obligatoriu</span></div>'+
-    '</div>'+
-    '<div class="field-row c3">'+
-      '<div class="field"><label>Data Nasterii <span class="req">*</span><span class="en">/ DOB</span></label><input type="date" name="'+p+'_dob" required><span class="emsg">Obligatoriu</span></div>'+
-      '<div class="field"><label>Cetatenie <span class="req">*</span><span class="en">/ Nationality</span></label><input type="text" name="'+p+'_cetatenie" placeholder="Romana" required><span class="emsg">Obligatoriu</span></div>'+
-      '<div class="field"><label>Loc Nastere <span class="en">/ Place of Birth</span></label><input type="text" name="'+p+'_loc_nastere" placeholder="Bucuresti"></div>'+
-    '</div>'+
-    emailRow+
-    '<div class="field-row c1" style="margin-bottom:8px;">'+
-      '<div class="field"><label>Tip Act Identitate <span class="req">*</span><span class="en">/ ID Type</span></label>'+
-      '<select id="'+p+'_tip" name="'+p+'_tip_act" onchange="updId(\''+p+'\')" required>'+
-        '<option value="">Selectati tipul actului / Select ID type</option>'+
-        '<option>Carte de Identitate</option>'+
-        '<option>Carte de Identitate Electronica</option>'+
-        '<option>Pasaport / Passport</option>'+
-        '<option>Permis de Sedere / Residence Permit</option>'+
-        '<option>Alt document / Other</option>'+
-      '</select>'+
-      '<span class="emsg">Obligatoriu</span></div>'+
-    '</div>'+
-    '<div id="'+p+'_idf"></div>'+
-  '</div>';
+function buildGuest(i){
+  var p='g'+i;
+  var isFirst=(i===1);
+  var badge=isFirst?'<span class="gbadge">Oaspete Principal / Primary Guest</span>':'<span class="gbadge alt">Oaspete '+i+' / Guest '+i+'</span>';
+  var note=isFirst?'<div class="pnote"><strong>Oaspetele principal</strong> este persoana al carui <strong>nume personal figureaza in rezervare</strong>. Nu folositi denumiri de companie sau aliasuri.<em>The primary guest is the person whose full name appears on the booking.</em></div>':'';
+  var erow=isFirst?'<div class="field-row c2"><div class="field"><label>Email <span class="req">*</span></label><input type="email" name="'+p+'_email" placeholder="email@exemplu.com" required><span class="emsg">Email invalid</span></div><div class="field"><label>Telefon <span class="req">*</span></label><input type="tel" name="'+p+'_telefon" placeholder="+40 7XX XXX XXX" required><span class="emsg">Obligatoriu</span></div></div>':'';
+  var h='<div class="gblock"><div class="gtitle">'+badge+'</div>'+note;
+  h+='<div class="field-row c2"><div class="field"><label>Nume <span class="req">*</span></label><input type="text" name="'+p+'_nume" placeholder="Popescu" required><span class="emsg">Obligatoriu</span></div><div class="field"><label>Prenume <span class="req">*</span></label><input type="text" name="'+p+'_prenume" placeholder="Ion" required><span class="emsg">Obligatoriu</span></div></div>';
+  h+='<div class="field-row c3"><div class="field"><label>Data Nasterii <span class="req">*</span></label><input type="date" name="'+p+'_dob" required><span class="emsg">Obligatoriu</span></div><div class="field"><label>Cetatenie <span class="req">*</span></label><input type="text" name="'+p+'_cetatenie" placeholder="Romana" required><span class="emsg">Obligatoriu</span></div><div class="field"><label>Loc Nastere <span class="req">*</span></label><input type="text" name="'+p+'_loc_nastere" placeholder="Bucuresti" required><span class="emsg">Obligatoriu</span></div></div>';
+  h+=erow;
+  h+='<div class="field-row c1" style="margin-bottom:8px;"><div class="field"><label>Tip Act Identitate <span class="req">*</span></label><select id="'+p+'_tip" name="'+p+'_tip_act" data-guest="'+p+'" required><option value="">Selectati tipul actului / Select ID type</option><option>Carte de Identitate</option><option>Carte de Identitate Electronica</option><option>Pasaport / Passport</option><option>Permis de Sedere / Residence Permit</option><option>Alt document / Other</option></select><span class="emsg">Obligatoriu</span></div></div>';
+  h+='<div id="'+p+'_idf"></div></div>';
+  return h;
 }
 
-document.getElementById('NPS').addEventListener('change', function(){
-  gCount = parseInt(this.value)||0;
-  var gl = document.getElementById('GL');
-  gl.innerHTML = '';
-  if(!gCount){
-    gl.innerHTML = '<div class="estate">Selectati numarul de persoane la Sectiunea 1.<br><span style="font-size:10px;">Select number of guests in Section 1.</span></div>';
-    return;
-  }
-  for(var i=1;i<=gCount;i++) gl.insertAdjacentHTML('beforeend', buildGuest(i));
+document.getElementById('NPS').addEventListener('change',function(){
+  gCount=parseInt(this.value)||0;
+  var gl=document.getElementById('GL');
+  gl.innerHTML='';
+  if(!gCount){gl.innerHTML='<div class="estate">Selectati numarul de persoane la Sectiunea 1.</div>';return;}
+  for(var i=1;i<=gCount;i++)gl.insertAdjacentHTML('beforeend',buildGuest(i));
   updProg();
 });
 
-// SIGNATURE
-var cv = document.getElementById('SC');
-var cx = cv.getContext('2d');
-var drw=false, sgn=false, lx=0, ly=0;
+// Event delegation for tip act selects
+document.getElementById('GL').addEventListener('change',function(e){
+  if(e.target&&e.target.getAttribute('data-guest')){
+    updId(e.target.getAttribute('data-guest'));
+  }
+});
 
-function rszSig(){
-  var r=cv.getBoundingClientRect(), dpr=window.devicePixelRatio||1;
-  cv.width=r.width*dpr; cv.height=r.height*dpr;
-  cx.scale(dpr,dpr); cx.strokeStyle='#380E1C'; cx.lineWidth=2.2; cx.lineCap='round'; cx.lineJoin='round';
-}
+var cv=document.getElementById('SC');
+var cx=cv.getContext('2d');
+var drw=false,sgn=false,lx=0,ly=0;
+function rszSig(){var r=cv.getBoundingClientRect(),dpr=window.devicePixelRatio||1;cv.width=r.width*dpr;cv.height=r.height*dpr;cx.scale(dpr,dpr);cx.strokeStyle='#380E1C';cx.lineWidth=2.2;cx.lineCap='round';cx.lineJoin='round';}
 rszSig();
 window.addEventListener('resize',function(){if(!sgn)rszSig();});
-
-function gpos(e){
-  var r=cv.getBoundingClientRect();
-  if(e.touches) return{x:e.touches[0].clientX-r.left,y:e.touches[0].clientY-r.top};
-  return{x:e.clientX-r.left,y:e.clientY-r.top};
-}
+function gpos(e){var r=cv.getBoundingClientRect();if(e.touches)return{x:e.touches[0].clientX-r.left,y:e.touches[0].clientY-r.top};return{x:e.clientX-r.left,y:e.clientY-r.top};}
 cv.addEventListener('mousedown',function(e){drw=true;var p=gpos(e);lx=p.x;ly=p.y;document.getElementById('SP').style.opacity='0';sgn=true;});
 cv.addEventListener('mousemove',function(e){if(!drw)return;var p=gpos(e);cx.beginPath();cx.moveTo(lx,ly);cx.lineTo(p.x,p.y);cx.stroke();lx=p.x;ly=p.y;});
 cv.addEventListener('mouseup',function(){drw=false;});
@@ -326,19 +339,12 @@ cv.addEventListener('touchmove',function(e){e.preventDefault();if(!drw)return;va
 cv.addEventListener('touchend',function(){drw=false;});
 function clrSig(){var d=window.devicePixelRatio||1;cx.clearRect(0,0,cv.width/d,cv.height/d);sgn=false;document.getElementById('SP').style.opacity='1';}
 
-// FILE UPLOAD
-var fi=document.getElementById('FI'), ua=document.getElementById('UA');
+var fi=document.getElementById('FI'),ua=document.getElementById('UA');
 fi.addEventListener('change',function(){
   if(!this.files||!this.files[0])return;
   var f=this.files[0];
-  if(f.type.indexOf('image/')===0){
-    var rd=new FileReader();
-    rd.onload=function(e){document.getElementById('PI').src=e.target.result;document.getElementById('UP').style.display='block';};
-    rd.readAsDataURL(f);
-  } else {
-    document.getElementById('PI').style.display='none';
-    document.getElementById('UP').style.display='block';
-  }
+  if(f.type.indexOf('image/')===0){var rd=new FileReader();rd.onload=function(e){document.getElementById('PI').src=e.target.result;document.getElementById('UP').style.display='block';};rd.readAsDataURL(f);}
+  else{document.getElementById('PI').style.display='none';document.getElementById('UP').style.display='block';}
   document.getElementById('UFN').textContent='OK: '+f.name;
   document.getElementById('FE').style.display='none';
 });
@@ -346,9 +352,8 @@ ua.addEventListener('dragover',function(e){e.preventDefault();ua.classList.add('
 ua.addEventListener('dragleave',function(){ua.classList.remove('dg');});
 ua.addEventListener('drop',function(e){e.preventDefault();ua.classList.remove('dg');fi.files=e.dataTransfer.files;fi.dispatchEvent(new Event('change'));});
 
-// PROGRESS
 function updProg(){
-  var req=document.querySelectorAll('[required]'), filled=0;
+  var req=document.querySelectorAll('[required]'),filled=0;
   req.forEach(function(el){
     if(el.type==='checkbox'){if(el.checked)filled++;}
     else if(el.type==='file'){if(el.files&&el.files.length)filled++;}
@@ -360,86 +365,52 @@ function updProg(){
 document.addEventListener('input',updProg);
 document.addEventListener('change',updProg);
 
-// VALIDATE
 function validate(){
-  var ok=true, first=null;
+  var ok=true,first=null;
   document.querySelectorAll('[required]').forEach(function(el){
     var fv=true;
     if(el.type==='checkbox'){
       fv=el.checked;
-      if(el.id==='GC') document.getElementById('GE').style.display=fv?'none':'block';
-    } else if(el.type==='file'){
-      fv=el.files&&el.files.length>0;
-      if(!fv) document.getElementById('FE').style.display='block';
-    } else if(el.type==='email'){
-      fv=el.value&&/\S+@\S+\.\S+/.test(el.value);
-    } else {
-      fv=el.value&&el.value.trim()!=='';
-    }
-    if(!fv){
-      ok=false; el.classList.add('err');
-      var em=el.parentElement&&el.parentElement.querySelector('.emsg');
-      if(em) em.style.display='block';
-      if(!first) first=el;
-    } else {
-      el.classList.remove('err');
-      var em=el.parentElement&&el.parentElement.querySelector('.emsg');
-      if(em) em.style.display='none';
-    }
+      if(el.id==='GC')document.getElementById('GE').style.display=fv?'none':'block';
+      if(el.id==='DC')document.getElementById('DE').style.display=fv?'none':'block';
+    }else if(el.type==='file'){fv=el.files&&el.files.length>0;if(!fv)document.getElementById('FE').style.display='block';}
+    else if(el.type==='email'){fv=el.value&&/[^@]+@[^@]+\.[^@]+/.test(el.value);}
+    else{fv=el.value&&el.value.trim()!=='';}
+    if(!fv){ok=false;el.classList.add('err');var em=el.parentElement&&el.parentElement.querySelector('.emsg');if(em)em.style.display='block';if(!first)first=el;}
+    else{el.classList.remove('err');var em=el.parentElement&&el.parentElement.querySelector('.emsg');if(em)em.style.display='none';}
   });
-  if(!sgn){
-    ok=false;
-    document.getElementById('SE').style.display='block';
-    document.getElementById('SB').style.borderColor='var(--error)';
-    if(!first) first=document.getElementById('SB');
-  } else {
-    document.getElementById('SE').style.display='none';
-    document.getElementById('SB').style.borderColor='var(--border)';
-  }
+  if(!sgn){ok=false;document.getElementById('SE').style.display='block';document.getElementById('SB').style.borderColor='var(--error)';if(!first)first=document.getElementById('SB');}
+  else{document.getElementById('SE').style.display='none';document.getElementById('SB').style.borderColor='var(--border)';}
   if(!gCount){ok=false;document.getElementById('NPS').classList.add('err');}
-  if(first) first.scrollIntoView({behavior:'smooth',block:'center'});
+  if(first)first.scrollIntoView({behavior:'smooth',block:'center'});
   return ok;
 }
 
-// SUBMIT
 document.getElementById('CF').addEventListener('submit',function(e){
   e.preventDefault();
-  if(!validate()) return;
-
+  if(!validate())return;
   var btn=document.getElementById('SB2');
   document.getElementById('BT').style.display='none';
   document.getElementById('SP2').style.display='block';
   btn.disabled=true;
-
   var ref='RHR-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).substr(2,4).toUpperCase();
   var fd=new FormData(document.getElementById('CF'));
-  fd.append('access_key', W3KEY);
-  fd.append('subject','Fisa cazare noua - '+(fd.get('proprietate')||'RH Reserve')+' - '+ref);
-  fd.append('from_name','RH Reserve Fisa Cazare');
-  fd.append('referinta',ref);
-  fd.append('timestamp',new Date().toLocaleString('ro-RO',{timeZone:'Europe/Bucharest'}));
-
-  var payload = {};
-  for(var pair of fd.entries()){
-    if(pair[0] !== 'act_identitate') payload[pair[0]] = pair[1];
-  }
-  payload['semnatura'] = cv.toDataURL('image/png');
-  var fileInput = document.getElementById('FI');
-  if(fileInput.files && fileInput.files[0]){
-    var rdr = new FileReader();
-    rdr.onload = function(ev){
-      payload['act_id'] = ev.target.result;
-      fetch('https://script.google.com/macros/s/AKfycbynXBGI_5m4OdIWFF26QvEVKqB1zTHkEqsMU526o0JrnbxJfyT0w6cCNtfUnbwumvt9/exec',{method:'POST',body:JSON.stringify(payload),mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'}})
-      .then(function(){succes(ref);}).catch(function(){succes(ref);});
-    };
+  var payload={};
+  for(var pair of fd.entries()){if(pair[0]!=='act_identitate')payload[pair[0]]=pair[1];}
+  payload['referinta']=ref;
+  payload['timestamp']=new Date().toLocaleString('ro-RO',{timeZone:'Europe/Bucharest'});
+  payload['semnatura']=cv.toDataURL('image/png');
+  var fileInput=document.getElementById('FI');
+  if(fileInput.files&&fileInput.files[0]){
+    var rdr=new FileReader();
+    rdr.onload=function(ev){payload['act_id']=ev.target.result;fetch(GAS,{method:'POST',body:JSON.stringify(payload),mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'}}).then(function(){done(ref);}).catch(function(){done(ref);});};
     rdr.readAsDataURL(fileInput.files[0]);
-  } else {
-    fetch('https://script.google.com/macros/s/AKfycbynXBGI_5m4OdIWFF26QvEVKqB1zTHkEqsMU526o0JrnbxJfyT0w6cCNtfUnbwumvt9/exec',{method:'POST',body:JSON.stringify(payload),mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'}})
-    .then(function(){succes(ref);}).catch(function(){succes(ref);});
+  }else{
+    fetch(GAS,{method:'POST',body:JSON.stringify(payload),mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'}}).then(function(){done(ref);}).catch(function(){done(ref);});
   }
 });
 
-function succes(ref){
+function done(ref){
   document.getElementById('FB').style.display='none';
   document.getElementById('SS').style.display='none';
   document.getElementById('SUC').style.display='block';
@@ -452,7 +423,7 @@ document.addEventListener('input',function(e){
   if(!e.target.matches('input,select'))return;
   e.target.classList.remove('err');
   var em=e.target.parentElement&&e.target.parentElement.querySelector('.emsg');
-  if(em) em.style.display='none';
+  if(em)em.style.display='none';
 });
 
 var today=new Date().toISOString().split('T')[0];
